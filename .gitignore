@@ -1,0 +1,12 @@
+.DS_Store
+coverage
+/.bundle
+vendor/bundle
+bin/
+tmp/
+.idea/
+Gemfile.lock
+.byebug_history
+spec/dummy/.bundle
+spec/**/log/*.log
+doc

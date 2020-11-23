@@ -1,0 +1,6 @@
+inherit_gem:
+  jets-rubocop: config/base.yml
+
+Naming/FileName:
+  Exclude:
+   - "lib/jets-rails.rb"

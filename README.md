@@ -1,11 +1,11 @@
-[gem]: https://rubygems.org/gems/jets-rails
-[actions]: https://github.com/getjets/jets-rails/actions
+[gem]: https://rubygems.org/gems/jets-railtie
+[actions]: https://github.com/getjets/jets-railtie/actions
 
-# jets-rails
+# jets-railtie
 
-[![CI Status](https://github.com/getjets/jets-rails/workflows/ci/badge.svg)][actions]
+[![CI Status](https://github.com/getjets/jets-railtie/workflows/ci/badge.svg)][actions]
 
-jets-rails provides the official integration of Jets gems with Ruby on Rails framework.
+`jets-railtie` provides the official integration of Jets gems with Ruby on Rails framework.
 
 ## Supported Ruby versions
 

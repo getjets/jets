@@ -1,0 +1,19 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
+end
+
+gemspec
+
+eval_gemfile "./Gemfile.runtime"
+
+gem "jets-testing"
+gem "jets-rubocop"
+
+# Speed up application code loading
+# https://github.com/Shopify/bootsnap
+gem "bootsnap", ">= 1.4.3", require: false

@@ -11,6 +11,6 @@ RAILS_VERSION = (ENV["RAILS_VERSION"] || "6.0").sub("x", "0")
 end
 
 group :test do
-  gem "jets-testing", path: "../jets-testing"
-  gem "jets-rubocop", path: "../jets-rubocop"
+  gem "jets-testing"
+  gem "jets-rubocop"
 end

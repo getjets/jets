@@ -9,7 +9,8 @@ module Jets
     # @api public
     class Railtie < ::Rails::Railtie
       generators do
-        require "jets/generators/engine_generator"
+        require "generators/jets/engine/engine_generator"
+        require "generators/jets/install/install_generator"
       end
     end
   end

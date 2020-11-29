@@ -8,6 +8,7 @@ require "jets/rails/version"
 Gem::Specification.new do |spec|
   spec.name = "jets-railtie"
   spec.authors = ["Lauri Jutila"]
+  spec.email = "ruby@laurijutila.com"
   spec.license = "MIT"
   spec.version = Jets::Rails::VERSION.dup
 
@@ -28,11 +29,11 @@ Gem::Specification.new do |spec|
 
   # to update dependencies edit project.yml
 
-  spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "bundler", "~> 2"
+  spec.add_development_dependency "rake", "~> 12.3"
+  spec.add_development_dependency "rspec", "~> 3.9"
 
-  spec.add_development_dependency "fuubar", ">= 2.5"
-  spec.add_development_dependency "rspec-instafail", ">= 1.0"
-  spec.add_development_dependency "rspec_junit_formatter", ">= 0.4"
+  spec.add_development_dependency "fuubar", "~> 2.5"
+  spec.add_development_dependency "rspec-instafail", "~> 1.0"
+  spec.add_development_dependency "rspec_junit_formatter", "~> 0.4"
 end

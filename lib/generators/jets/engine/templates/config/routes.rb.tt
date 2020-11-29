@@ -1,0 +1,2 @@
+<%= class_name %>::Engine.routes.draw do
+end

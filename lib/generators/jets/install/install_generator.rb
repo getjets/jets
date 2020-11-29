@@ -13,6 +13,11 @@ module Jets
       def set_rails_version
         template ".rails-version", "./.rails-version"
       end
+
+      def modify_gemfile
+        prepend_to_file "Gemfile", 'require "bundler/component"'
+        prepend_to_file "Gemfile", 'require "bundler/eval_gemfile"'
+      end
     end
   end
 end

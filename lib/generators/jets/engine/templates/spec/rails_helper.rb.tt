@@ -3,7 +3,9 @@
 # Engine root is used by rails_configuration to correctly
 # load fixtures and support files
 
-ENGINE_ROOT = Pathname.new(File.expand_path("..", __dir__))
+unless defined?(ENGINE_ROOT)
+  ENGINE_ROOT = Pathname.new(File.expand_path("..", __dir__))
+end
 
 ENV["RAILS_ENV"] = "test"
 ENV["BOOTSNAP_CACHE_DIR"] = File.join(ENGINE_ROOT, "spec", "internal", "tmp", "cache")
@@ -41,7 +43,12 @@ end
 # Rails.application.default_url_options[:host] = "localhost"
 # <%= class_name %>::Engine.routes.default_url_options[:host] = "localhost"
 
-require "jets/testing/rails_configuration"
+module Jets
+  module Testing
+  end
+end
+
+require "jets/testing/rails"
 
 # action_policy helpers
 # require "action_policy/rspec"

@@ -1,0 +1,29 @@
+# <%= class_name %>
+
+## Purpose
+
+TODO: Purpose of this gem.
+
+## Architecture
+
+TODO: Define the architecture of this gem.
+
+## Development Environment
+
+TODO: Write instructions how to set up a development environment for this gem.
+
+## Test Environment
+
+TODO: Write instructions how to set up a test environment for this gem.
+
+## Production Environment
+
+TODO: Write instructions how to use this gem in production.
+
+## Continuous Integration
+
+TODO: Write instructions on how this gem is continuously integrated.
+
+## Coding Style
+
+TODO: Define coding style for this gem.

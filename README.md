@@ -16,3 +16,15 @@ This library officially supports the following Ruby versions:
 ## License
 
 See `LICENSE` file.
+
+## Credits
+
+Original inspiration for the Jets project comes from [Vladimir Dementyev's](https://github.com/palkan)
+excellent presentation on component-based Rails monolith applications and his [Engems](https://github.com/palkan/engems)
+showcase repository.
+
+Code:
+- [Engems](https://github.com/palkan/engems)
+
+Talks:
+- [Between monoliths and microservices](https://noti.st/palkan/VWPOSd/between-monoliths-and-microservices)

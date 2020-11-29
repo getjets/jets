@@ -1,0 +1,5 @@
+Description:
+    This generator creates a skeleton of a Rails engine with Jets conventions and configurations.
+
+Example:
+    rails generate jets:engine <name>

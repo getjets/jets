@@ -1,0 +1,4 @@
+module <%= class_name %>
+  class ApplicationController < Engine.config.application_controller.constantize
+  end
+end

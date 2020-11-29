@@ -14,6 +14,9 @@ module <%= class_name %>
 
     config.autoload_paths += Dir["#{config.root}/app/**/concerns"]
 
+    # Specify the application controller base class, defaults to main application's ApplicationController
+    config.application_controller = "ApplicationController"
+
     initializer "<%= name %>" do |app|
       app.config.paths["db/migrate"].concat(config.paths["db/migrate"].expanded)
 
@@ -25,6 +28,21 @@ module <%= class_name %>
       # This hook is provided by `jets-factory` gem
       ActiveSupport.on_load(:factory_bot) do
         FactoryBot.definition_file_paths.unshift engine_factories_path
+      end
+    end
+
+    initialize "<%= name %>.subscribe_to_events" do
+      ActiveSupport.on_load :active_event_store do |store|
+        # async subscriber is invoked from a background job, enqueued after the transaction commits
+        # store.subscribe MyEventHandler, to: EventHappened
+
+        # anonymous handler
+        # store.subscribe(to: EventHappened, sync: true) do |event|
+        #   # do something
+        # end
+
+        # subscribes to EventHappened automatically
+        # store.subscribe OnEventHappened::DoThat
       end
     end
   end

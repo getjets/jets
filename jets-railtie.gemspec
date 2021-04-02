@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.metadata["source_code_uri"] = "https://github.com/getjets/jets-railtie"
   spec.metadata["bug_tracker_uri"] = "https://github.com/getjets/jets-railtie/issues"
 
-  spec.required_ruby_version = ">= 2.7.0"
+  spec.required_ruby_version = ">= 3.0.0"
 
   spec.add_runtime_dependency "jets-bundler", "~> 0.1"
   spec.add_runtime_dependency "jets-factory", "~> 0.1"

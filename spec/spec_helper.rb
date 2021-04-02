@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require "jets-rails"
+require "jets-railtie"
+require "pathname"
 
-SPEC_ROOT = Pathname(__dir__)
+SPEC_ROOT = Pathname.new(__dir__)
 
 Dir[SPEC_ROOT.join("support/**/*.rb")].each(&method(:require))
 

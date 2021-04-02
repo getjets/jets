@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "jets-railtie"
+require "get-jets"
 require "pathname"
 
 SPEC_ROOT = Pathname.new(__dir__)

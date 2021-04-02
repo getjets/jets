@@ -6,24 +6,24 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "jets/rails/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "jets-railtie"
+  spec.name = "get-jets"
   spec.authors = ["Lauri Jutila"]
   spec.email = "ruby@laurijutila.com"
   spec.license = "MIT"
   spec.version = Jets::Rails::VERSION.dup
 
-  spec.summary = "The official Jets railtie for Ruby on Rails"
-  spec.description = "jets-railtie provides the official integration of Jets gems with Ruby on Rails framework."
-  spec.homepage = "https://github.com/getjets/jets-railtie"
-  spec.files = Dir["CHANGELOG.md", "LICENSE", "README.md", "jets-railtie.gemspec", "lib/**/*"]
+  spec.summary = "Jets for your Ruby on Rails apps"
+  spec.description = "get-jets provides the official integration of Jets gems with Ruby on Rails framework."
+  spec.homepage = "https://github.com/getjets/jets"
+  spec.files = Dir["CHANGELOG.md", "LICENSE", "README.md", "get-jets.gemspec", "lib/**/*"]
   spec.bindir = "bin"
   spec.executables = []
   spec.require_paths = ["lib"]
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
-  spec.metadata["changelog_uri"] = "https://github.com/getjets/jets-railtie/blob/master/CHANGELOG.md"
-  spec.metadata["source_code_uri"] = "https://github.com/getjets/jets-railtie"
-  spec.metadata["bug_tracker_uri"] = "https://github.com/getjets/jets-railtie/issues"
+  spec.metadata["changelog_uri"] = "https://github.com/getjets/jets/blob/master/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/getjets/jets"
+  spec.metadata["bug_tracker_uri"] = "https://github.com/getjets/jets/issues"
 
   spec.required_ruby_version = ">= 3.0.0"
 
